@@ -23,7 +23,7 @@ console.log(`--> ${doors} <--`)
 guessDoor = readlineSync.question('Choose the number of the door: ')
 
 //Mounty choisi et dévoile un choix qui n'ai pas celui du joueur
-const other_doors = doors.filter(door => door !== guessDoor)
+const other_doors = secretDoors.filter(door => door !== guessDoor)
 const showable = other_doors.filter(door => door !== carIndex)
 
 //affiché le nouveau tableau au joueur
