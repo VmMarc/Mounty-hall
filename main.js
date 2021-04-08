@@ -31,7 +31,7 @@ const showable = other_doors.filter(door => door !== carIndex)
 //demander au joueur si il veux changer ou garder la meme porte
 
 // condition victoire/défaite
-if (carIndex === final){
+if (carIndex === finalGuess){
   console.log('YOU WIN!')
 } else {
   console.log('Sorry you LOST this time...')
